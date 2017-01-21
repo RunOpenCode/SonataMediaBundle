@@ -38,7 +38,7 @@ class MediaAdmin extends Admin
             ), 'choice', $options);
 
         if (null !== $this->categoryManager) {
-            $datagridMapper->add('category', null, array('show_filter' => false));
+            $datagridMapper->add('category', 'doctrine_orm_choice', array('show_filter' => false));
         }
 
         $datagridMapper
